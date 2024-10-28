@@ -1480,7 +1480,7 @@ img{
 
 .mobile-menu .navigation li:hover > a,
 .mobile-menu .navigation li.current > a{
-	color:var(--primary-color);	
+	color:var(--primary-color) !important;	
 }
 
 .mobile-menu .navigation li.dropdown .dropdown-btn{
@@ -3619,7 +3619,7 @@ img{
 	position:relative;
 	padding-top:170px;
 	overflow:hidden;
-	background-color:#efefeb;
+	background-color:#f3f4f8;
 }
 
 .service-banner-section .content-box{
