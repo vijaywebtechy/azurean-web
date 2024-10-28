@@ -880,7 +880,7 @@ img{
 
 .main-menu{
 	position:relative;
-	float:left;
+	float:right;
 	transition: all 500ms ease;
     -moz-transition: all 500ms ease;
     -webkit-transition: all 500ms ease;
@@ -1480,7 +1480,7 @@ img{
 
 .mobile-menu .navigation li:hover > a,
 .mobile-menu .navigation li.current > a{
-	color:var(--primary-color) !important;	
+	color:var(--primary-color);	
 }
 
 .mobile-menu .navigation li.dropdown .dropdown-btn{
