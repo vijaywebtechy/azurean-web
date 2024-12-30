@@ -107,7 +107,7 @@
  ***/
 
  :root { 
-	--primary-color: #0070C0;
+	--primary-color: #008AD8;
  }
 
 body {
@@ -119,6 +119,10 @@ body {
 	background:#ffffff;
 	-webkit-font-smoothing: antialiased;
 	-moz-font-smoothing: antialiased;
+}
+
+.primary-bg{
+	background:var(--primary-color);
 }
 
 .bordered-layout .page-wrapper{
@@ -180,9 +184,7 @@ h6{
 	font-size:18px;
 }
 
-input,button,select,textarea{
-	
-}
+
 
 textarea{
 	overflow:hidden;
@@ -720,7 +722,7 @@ img{
 }
 
 .main-header .header-upper .inner-container{
-	position:relative;
+	position:relative; padding: 10px 0;
 }
 
 .main-header .header-upper .outer-box .nav-toggler{
@@ -731,17 +733,7 @@ img{
 	display:inline-block;
 }
 
-.main-header.fixed-header .header-upper .outer-box{
-	
-}
 
-.main-header.fixed-header .header-upper .logo-box .logo{
-	
-}
-
-.main-header.fixed-header .main-menu .navigation > li > a{
-	
-}
 
 .main-header.fixed-header .main-menu .navigation > li.current > a,
 .main-header.fixed-header .main-menu .navigation > li:hover > a{
@@ -847,7 +839,6 @@ img{
 .main-header .header-upper .logo-box{
 	position:relative;
 	z-index:10;
-	padding:26px 0px;
 	transition: all 500ms ease;
     -moz-transition: all 500ms ease;
     -webkit-transition: all 500ms ease;
@@ -1075,9 +1066,7 @@ img{
 	width:100%;
 }
 
-.main-menu .navigation > li > ul > li > ul > li:last-child{
-	
-}
+
 
 .main-menu .navigation > li > ul > li > ul > li > a{
 	position: relative;
@@ -2322,6 +2311,7 @@ img{
 	-webkit-transition:all 500ms ease;
 	-ms-transition:all 500ms ease;
 	-o-transition:all 500ms ease;
+
 }
 
 .service-block.style-two{
@@ -2368,9 +2358,9 @@ img{
 
 .service-block .inner-box h5{
 	position:relative;
+	font-size: 24px;
 	font-weight:600;
-	margin-top:30px;
-	margin-bottom:15px;
+	margin:30px 0;
 }
 
 .service-block .inner-box h5 a{
@@ -2414,7 +2404,62 @@ img{
 	color:var(--primary-color);
 }
 
+.fund-objectives li{
+	display: flex; align-items: flex-start;
+}
+.fund-objectives li .icon{
+	font-size: 20px;
+	margin: 3px 10px 0 0;
+	color: var(--primary-color);
+}
+.fund-objectives li p{
+	font-size: 16px;
+	font-weight: 500;
+	color: #999999;
+}
+
+
+.investment-approach .inner-box{
+	padding: 30px 16px;
+	height: 100%;
+	border: 1px solid #ebebeb;
+	display: flex; align-items: center; justify-content: center;
+	text-align: center;
+	background-color: var(--primary-color);
+
+}
+.investment-approach .inner-box h3{
+	font-size: 22px; font-weight: 600;
+	color: #FFFFFF; text-transform: uppercase;
+}
+
+.investment-approach ul li{
+	list-style-type:decimal-leading-zero !important;
+}
+.investment-approach ul li p{
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 26px;
+	color: #666666;
+}
+.investment-approach ul li p strong{
+	color: #737373;	
+}
+
+.investment-philosophy ul li{
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 26px;
+	color: #666666;
+}
+.investment-philosophy ul li strong{
+	color: #737373;	
+}
+
+
+
 /*** 
+
 
 ====================================================================
 	Reputation Section
@@ -2485,7 +2530,7 @@ img{
 
 .experts-section{
 	position:relative;
-	padding:100px 0px 70px;
+	padding:100px 0 0;
 }
 
 .experts-section .sec-title .experts{
@@ -3181,6 +3226,7 @@ img{
 
 .main-footer.style-two{
 	border-top:1px solid #dfdfdf;
+	background-color: #f8f9fa;
 }
 
 .main-footer .footer-widget{
@@ -3213,7 +3259,6 @@ img{
 }
 .main-footer .logo-widget .logo img{
 	width: 150px;
-	filter: grayscale(0.9);
 }
 
 .main-footer .logo-widget .call{
@@ -3807,9 +3852,7 @@ img{
 	background-color:#f7f7f7;
 }
 
-.accordion-box .block.active-block{
-	
-}
+
 
 .accordion-box .block .acc-btn{
 	position:relative;
